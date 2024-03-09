@@ -2136,7 +2136,7 @@ export default function type3(json, yMirror, returnData, additionalData) {
 						<td class="document__tableDetailCell">${item.name} №${previousNumbers + 1}${item.size === '1050 X 2080' ? ' увелич. проем' : ''}</td>
 						<td class="document__tableDetailCell">${item.indicator}</td>
 						<td class="document__tableDetailCell" align="center">${walls.thickness * 10}</td>
-						<td class="document__tableDetailCell">${item.size}${item.direction}</td>
+						<td class="document__tableDetailCell">${item.type !== 'basedoor' ? item.size : ''}${item.direction}</td>
 						<td class="document__tableDetailCell" align="center">${item.count}</td>
 						<td class="document__tableDetailCell" align="center"></td>
 					</tr>
