@@ -797,7 +797,7 @@ export default function type3(json, yMirror, returnData, additionalData) {
 					type: 'basedoor',
 					name: 'Дверной блок',
 					indicator: 'Распашная',
-					size: '954 X 2000',
+					size: '800 X 1850',
 					direction: '',
 					count: 0
 				},
@@ -805,7 +805,7 @@ export default function type3(json, yMirror, returnData, additionalData) {
 					type: 'basedoor',
 					name: 'Дверной блок',
 					indicator: 'Распашная',
-					size: '1050 X 2080',
+					size: '900 X 1930',
 					direction: '',
 					count: 0
 				},
@@ -903,11 +903,11 @@ export default function type3(json, yMirror, returnData, additionalData) {
 							item.count++;
 							break;
 						}
-						else if (item.type === 'basedoor' && item.type === key && item.size === '954 X 2000' && /954 ?. ?2000/.test(hole.label)) {
+						else if (item.type === 'basedoor' && item.type === key && item.size === '800 X 1850' && /800 ?. ?1850/.test(hole.label)) {
 							item.count++;
 							break;
 						}
-						else if (item.type === 'basedoor' && item.type === key && item.size === '1050 X 2080' && /1050 ?. ?2080/.test(hole.label)) {
+						else if (item.type === 'basedoor' && item.type === key && item.size === '900 X 1930' && /900 ?. ?1930/.test(hole.label)) {
 							item.count++;
 							break;
 						}
@@ -970,11 +970,11 @@ export default function type3(json, yMirror, returnData, additionalData) {
 							item.count++;
 							break;
 						}
-						else if (item.type === 'basedoor' && item.type === key && item.size === '954 X 2000' && /954 ?. ?2000/.test(hole.label)) {
+						else if (item.type === 'basedoor' && item.type === key && item.size === '800 X 1850' && /800 ?. ?1850/.test(hole.label)) {
 							item.count++;
 							break;
 						}
-						else if (item.type === 'basedoor' && item.type === key && item.size === '1050 X 2080' && /1050 ?. ?2080/.test(hole.label)) {
+						else if (item.type === 'basedoor' && item.type === key && item.size === '900 X 1930' && /900 ?. ?1930/.test(hole.label)) {
 							item.count++;
 							break;
 						}
@@ -2133,7 +2133,7 @@ export default function type3(json, yMirror, returnData, additionalData) {
 				if (item.count > 0) return `
 					<tr>
 						<td class="document__tableDetailCell" align="center">${wallPanels.numberOfTypesOuter + wallPanels.numberOfTypesInner + ceilingPanels.numberOfTypes + floorPanels.numberOfTypes + 2 + previousNumbers}</td>
-						<td class="document__tableDetailCell">${item.name} №${previousNumbers + 1}${item.size === '1050 X 2080' ? ' увелич. проем' : ''}</td>
+						<td class="document__tableDetailCell">${item.name} №${previousNumbers + 1}${item.size === '900 X 1930' ? ' увелич. проем' : ''}</td>
 						<td class="document__tableDetailCell">${item.indicator}</td>
 						<td class="document__tableDetailCell" align="center">${walls.thickness * 10}</td>
 						<td class="document__tableDetailCell">${item.type !== 'basedoor' ? item.size : ''}${item.direction}</td>
